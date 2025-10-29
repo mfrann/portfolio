@@ -1,0 +1,130 @@
+.main-container-c{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 40px;
+}
+
+.content-leng{
+    flex: 1 1 250px;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.content-leng-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 120px;
+    width: 220px;
+    border-left: 2px solid var(--black2);
+    border-radius: 3px 0px 0px 3px;
+}
+
+
+.content-leng-text h1{
+    font-weight: 500;
+}
+
+.content-leng-text p{
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--black3);
+}
+
+.content-leng-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.sk-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sk-container:hover{
+    background: rgba(95, 95, 95, 0.1);
+}
+
+.sk-desc h1{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sk-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sk-icon img{
+    width: 40px;
+    object-fit: contain;
+}
+
+.content-leng-text .exp{
+    display: flex;
+    color: var(--black2);
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+@media (max-width: 1024px) {
+  .content-leng {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sk-container {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+
+    .content-leng-text{
+        border-left: 0;
+        border-top: 2px solid var(--black2);
+        border-radius: 3px 0px 0px 3px;
+    }
+
+  .content-leng-text h1 {
+    font-size: 18px;
+  }
+
+  .sk-desc h1 {
+    font-size: 16px;
+  }
+
+  .sk-icon img {
+    width: 30px; /* iconos más chicos */
+  }
+}
+
+

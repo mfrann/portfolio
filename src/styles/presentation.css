@@ -1,0 +1,144 @@
+.main-container-p{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 50px;
+}
+
+.presentation2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 50px;
+}
+
+.name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name h1{
+    display: flex;
+    width: 100%;
+    font-family: 'Melodrama', san-serif;
+    font-size: 190px;
+    color: var(--black2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.name h1:hover{
+    color: var(--brown);
+    letter-spacing: 1px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #704f38;
+    opacity: 0.4;
+}
+
+.line-text{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.subtitle p{
+    font-size: 18px;
+    color: var(--black2);
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 10px;
+    width: 100%;
+}
+
+.socials a{
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--black2);
+    transition: transform 0.3s ease;
+}
+
+.socials a:hover{
+    color: var(--brown);
+    transform: translateY(-2px);
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.text p{
+    font-weight: 400;
+    color: var(--black2);
+    font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+  .main-container-p h1{
+    font-size: 5rem;
+  }
+
+  .main-container-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    height: 810px;
+  }
+
+  .name{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+  }
+
+  .subtitle {
+    display: none;
+    font-size: 0.7rem;
+  }
+
+  .socials {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socials a{
+    font-size: 2rem;
+  }
+
+  
+}

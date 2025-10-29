@@ -1,0 +1,28 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title h1{
+    padding-left: 80px;
+    font-family: 'Melodrama', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--black);
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 15%;
+    text-align: center;
+    transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.title h1:hover{
+    color: var(--black2);
+    letter-spacing: 3px;
+}
+.title{
+    padding: 20px;
+    border-bottom: 2px solid var(--black2);
+    border-top: 2px solid var(--black2);
+}

@@ -1,0 +1,47 @@
+.main-container-f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid var(--black2);
+}
+
+.content-f{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+}
+
+.text-f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black2);
+}
+
+
+.social-f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.social-f a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black2);
+    transition: transform 0.3s ease;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.social-f a:hover{
+    color: var(--brown);
+    transform: translateY(-2px);
+}

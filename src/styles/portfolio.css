@@ -1,0 +1,50 @@
+.main-container-pj{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 20px;
+}
+
+.title-pj h1{
+    padding-left: 80px;
+    font-family: 'Melodrama', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--black);
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 15%;
+    text-align: center;
+    transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.title-pj{
+    padding: 20px;
+    border-bottom: 2px solid var(--black2);
+    border-top: 2px solid var(--black2);
+}
+.title-pj h1:hover{
+    color: var(--black2);
+    letter-spacing: 3px;
+}
+
+.pj-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .title-pj{
+        width: auto;
+        display: flex;
+        text-align: center;
+    }
+
+    .title-pj h1{
+        display: flex;
+        width: 100%;
+    }
+}

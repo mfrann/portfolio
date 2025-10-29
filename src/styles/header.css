@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 22px;
+    padding: 20px;
+    width: 100%;
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 400;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: currentColor; /* usa el mismo color del texto */
+    transition: width 0.3s ease;
+}
+ 
+.nav a:hover::after{
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+    a{
+        font-size: 20px;
+    }
+}
